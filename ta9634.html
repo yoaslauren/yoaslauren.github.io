@@ -33,10 +33,6 @@
 								<li><a href="index.html">Home</a></li>
 								<li><a href="aboutme.html">About Me</a></li>
 								<li><a href="#footer">Contact</a></li>
-								<!-- <li><a href="generic.html">Generic</a></li>
-								<li><a href="elements.html">Elements</a></li>
-								<li><a href="#">Log In</a></li>
-								<li><a href="#">Sign Up</a></li> -->
 							</ul>
 							<a href="#" class="close">Close</a>
 						</div>
@@ -45,9 +41,9 @@
 				<!-- Wrapper -->
 					<section id="wrapper">
 						<header>
-							<div class="inner">
+							<div class="inner", style="text-align: justify;">
 								<h2>Indonesia GIS FRM Roadmap Project</h2>
-								<p>Some samples of maps from the ADB Technical Assistance Project TA 9634-REG: Strengthening Integrated Flood Risk Management - National Flood Risk Management (FRM) Roadmap and investment program for Indonesia </p>
+								<p>Asian Development Bank Technical Assistance Project TA 9634-REG: Strengthening Integrated Flood Risk Management - National Flood Risk Management (FRM) Roadmap and investment program for Indonesia </p>
 							</div>
 						</header>
 
@@ -55,6 +51,38 @@
 							<div class="wrapper">
 								<div class="inner">
 
+									<p style="text-align: justify;">
+										The Flood Risk Management (FRM) Roadmap was developed by considering the FRM interventions identified at the Balai (river basin organizations) level in the context of flood risk issues and the set of national priorities in Indonesia.
+										The interventions developed by the Balai were presented in their Rencana (a 20-year masterplan) documents.
+										Interventions relevant to flood-related activities were compiled into a GIS database.
+										The database included more than 8000 flood-related interventions flooding across 35 Rencana documents.
+										</br>
+										A flood management atlas was created to map flood-risk-related parameters and the interventions proposed for each Balai.
+										Those parameters included land surface elevation, flooded area for 100-year and 500-year return period event for undefended cases (based on JBA flood maps), agricultural land exposed to 100-year return period fluvial flooding, land cover, population density, the proportion of people living in poverty, and Rencana interventions.
+										</br>
+										</br>
+										This FRM roadmap was then integrated with the NIRA (National Integrated Risk Analytics) tool in order to create a framework to prioritize flood risk investments in Indonesia. This project was presented at the EGU General Assembly 2022. The full abstract is published on its <a href="https://doi.org/10.5194/egusphere-egu22-9246" target="_blank"><b>website</b></a>.
+										</br>
+										</br>
+										<b>Tools:</b> QGIS, Google Earth Pro, Google Maps, Excel
+									</p>
+
+									<h3 class="major">Contents</h3>
+									<ol>
+										<li><a href="#national-maps">The National Maps</a></li>
+										<li><a href="#elevation">Terrain Elevation</a></li>
+										<li><a href="#land-cover">Land Cover</a></li>
+										<li><a href="#land-cover-changes">Land Cover Changes</a></li>
+										<li><a href="#flood-extent">Flood Extent</a></li>
+										<li><a href="#agri-vs-flood">Agricultural Land vs Flood Extent</a></li>
+										<li><a href="#infrastructure">Infrastructure</a></li>
+										<li><a href="#intervention">Intervention</a></li>
+									</ol>	
+
+									<h3 id="national-maps">
+										<br>
+										<br>
+									</h3>
 									<h3 class="major">The National Maps</h3>
 									<style>
 										img {
@@ -65,19 +93,33 @@
 										}
 									</style>
 
+									<div style="text-align: center;">
 									<picture>
-										<img src="/images/9. Population density 2016_rs_wmk.png" alt="Population Density" style="width:900px;height:636px;">
-										<img src="/images/population.png" alt="Population" style="width:1000px;height:460px;">
-										<img src="/images/10. Poverty percentage 2018_rs_wmk.png" alt="Poverty Percentage" style="width:900px;height:636px;">
-										<img src="/images/poverty.png" alt="Poverty" style="width:1000px;height:594px;">
-										<img src="/images/4. Proposed Flood Expenditure_rs_wmk.png" alt="Proposed Flood Exp" style="width:900px;height:636px;">
-										<img src="/images/5. Proposed Flood Expenditure per Population_rs_wmk.png" alt="Proposed Flood Exp per Pop" style="width:900px;height:636px;">
-										<img src="/images/12. Number of Historical Flood Events_rs_wmk.png" alt="Historical Flood Event" style="width:900px;height:636px;">
-										<img src="/images/6. Flood Disaster Index_rs_wmk.png" alt="Flood Disaster Index" style="width:900px;height:636px;">
-										<img src="/images/7. NIRA AAL_rs_wmk.png" alt="NIRA Annual Average Losses" style="width:900px;height:636px;">
+										<img src="/images/population-density-2016.png" alt="Population Density" style="width:900px;height:636px;">
+										<p>Population density per village in Indonesia in 2016 according to BPS (Central Statistic Agency of Indonesia).</p>
+										<img src="/images/population-cilicis.png" alt="Population" style="width:900px;height:636px;">
+										<p>A sample of a map of population density in a river basin territory in Indonesia in 2016. This map depicts the high population density in the Ciliwung-Cisadane River Basin Territory, where Jakarta the capital city of Indonesia is situated.</p>
+										<img src="/images/poverty-percentage-2018.png" alt="Poverty Percentage" style="width:900px;height:636px;">
+										<p>Poverty percentage per district in Indonesia in 2016.</p>
+										<img src="/images/poverty-papua.png" alt="Poverty" style="width:900px;height:636px;">
+										<p>A sample of a map of poverty percentage in a river basin territory in Indonesia in 2018. This map shows several areas in the Papua River Basin Territory with a relatively high proportion of the impoverished population.</p>
+										<img src="/images/proposed-flood-expend.png" alt="Proposed Flood Exp" style="width:900px;height:636px;">
+										<p>Total expenditure on flood projects that a River Basin Territory proposed in a Rencana (Masterplan) document. This project covered 35 Rencana documents.</p>
+										<img src="/images/proposed-flood-expend-pop.png" alt="Proposed Flood Exp per Pop" style="width:900px;height:636px;">
+										<p>Expenditure on flood projects per person.</p>
+										<img src="/images/historical-flood-events.png" alt="Historical Flood Event" style="width:900px;height:636px;">
+										<p>Number of flood events per district over the period 2008 to 2017 according to BNPB (Indonesia National Disaster Management Agency).</p>
+										<img src="/images/flood-disaster-index.png" alt="Flood Disaster Index" style="width:900px;height:636px;">
+										<p>Historical flood index between 2008 and 2018 according to BNPB. A higher index (red colours) indicates a more frequent and severe flood impact.</p>
+										<img src="/images/NIRA-AAL.png" alt="NIRA Annual Average Losses" style="width:900px;height:636px;">
+										<p>The National Integrated Risk Analytics (NIRA) tool for Indonesia, developed as part of the project TA 9634-REG, integrates nationally derived datasets from riverine and surface water flood modelling with information on flood-exposed populations to estimate the impacts of flooding on people, property, and losses. This map depicts the average annual losses due to flooding in Indonesia.</p>
 									</picture>
+									</div>
 
-									<p> </p>
+									<h3 id="elevation">
+										<br>
+										<br>
+									</h3>
 
 									<h3 class="major">Terrain Elevation</h3>
 									<style>
@@ -89,11 +131,17 @@
 										}
 									</style>
 
+									<div style="text-align: center;">
 									<picture>
-										<img src="/images/Elevation BWS BALI-PENIDA_rs_wmk.png" alt="Elevation-Bali" style="width:900px;height:636px;">
+										<img src="/images/elevation-bws-bali-penida.png" alt="Elevation-Bali" style="width:900px;height:636px;">
+										<p>A sample of a map of elevation in a river basin territory.</p>
 									</picture>
+									</div>
 
-									<p> </p>
+									<h3 id="land-cover">
+										<br>
+										<br>
+									</h3>
 
 									<h3 class="major">Land Cover</h3>
 									<style>
@@ -105,11 +153,17 @@
 										}
 									</style>
 
+									<div style="text-align: center;">
 									<picture>
-										<img src="/images/Land cover 2018 BWS SULAWESI II_rs_wmk.png" alt="Land Cover-2018" style="width:900px;height:636px;">
+										<img src="/images/land-cover-2018-bws-sulawesi-ii.png" alt="Land Cover-2018" style="width:900px;height:636px;">
+										<p>A sample of a map of land use in 2018. This map depicts land use in three river basin territories in the northern provinces of Sulawesi Island, where the areas are dominated by dryland forest (green and darker green shades) and dryland farming (golden brown and darker golden brown shades).</p>
 									</picture>
+									</div>
 
-									<p> </p>
+									<h3 id="land-cover-changes">
+										<br>
+										<br>
+									</h3>
 
 									<h3 class="major">Land Cover Changes</h3>
 									<style>
@@ -121,12 +175,21 @@
 										}
 									</style>
 
+									<div style="text-align: center;">
 									<picture>
-										<img src="/images/Land cover 2011 BWS BALI-PENIDA_rs_wmk.png" alt="Land Cover Bali-2011" style="width:900px;height:636px;">
-										<img src="/images/Land cover 2018 BWS BALI-PENIDA_rs_wmk.png" alt="Land Cover Bali-2018" style="width:900px;height:636px;">
+										<img src="/images/land-cover-2011-bws-bali-penida.png" alt="Land Cover Bali-2011" style="width:900px;height:636px;">
+										<p>A sample of a map of forest and urban areas in 2011. This map illustrates forest and urban areas in the Bali-Penida river basin territory.</p>
+										<img src="/images/land-cover-2018-bws-bali-penida.png" alt="Land Cover Bali-2018" style="width:900px;height:636px;">
+										<p>A sample of a map of forest and urban areas in 2018. This map illustrates forest and urban areas in the Bali-Penida river basin territory. </br> It is clear that from 2011 to 2018 the municipal areas experienced significant growth mainly in the southern region of the island, while there was a decline in forest areas.</p>
 									</picture>
+									</div>
 
 									<p> </p>
+
+									<h3 id="flood-extent">
+										<br>
+										<br>
+									</h3>
 								
 									<h3 class="major">Flood Extent</h3>
 									<style>
@@ -138,12 +201,21 @@
 										}
 									</style>
 
+									<div style="text-align: center;">
 									<picture>
-										<img src="/images/brantas100.png" alt="Flood Extent Brantas-100yr" style="width:900px;height:636px;">
-										<img src="/images/NIRA 500yr with Urban 2018 BBWS BRANTAS_rs_wmk.png" alt="Flood Extent Brantas-500yr" style="width:900px;height:636px;">
+										<img src="/images/NIRA-100yr-with-urban-2018-bbws-brantas.png" alt="Flood Extent Brantas-100yr" style="width:900px;height:636px;">
+										<p>A sample of a map of urban areas in 2018 was inundated by a 100-year return period fluvial flood in a river basin territory. Based on calculations using QGIS and Excel, in this map, a 100-year return period flood affected approximately 31% (605 km&sup2;) of urban areas in the Brantas River Basin Territory.</p>
+										<img src="/images/NIRA-500yr-with-urban-2018-bbws-brantas.png" alt="Flood Extent Brantas-500yr" style="width:900px;height:636px;">
+										<p>A sample of a map of urban areas in 2018 was inundated by a 500-year return period fluvial flood in a river basin territory. This map illustrates urban areas in the Brantas River Basin Territory are exposed to a 500-year return period flood extent.</p>
 									</picture>
+									</div>
 
 									<p> </p>
+
+									<h3 id="agri-vs-flood">
+										<br>
+										<br>
+									</h3>
 
 									<h3 class="major">Agricultural Land vs Flood Extent</h3>
 									<style>
@@ -155,11 +227,19 @@
 										}
 									</style>
 
+									<div style="text-align: center;">
 									<picture>
-										<img src="/images/Agriculture 2018 vs fluvial flooding 100yr BBWS BENGAWAN SOLO_rs_wmk.png" alt="Agricultural Land vs Flood-Bengawan Solo" style="width:900px;height:636px;">
+										<img src="/images/agriculture-2018-vs-fluvial-flood-100yr-bbws-bengawan-solo.png" alt="Agricultural Land vs Flood-Bengawan Solo" style="width:900px;height:636px;">
+										<p>A sample of a map of agricultural areas in 2018 was inundated by a 100-year return period fluvial flood in a river basin territory. Based on calculations using QGIS and Excel, in this map, a 100-year return period flood affected approximately 19% (1935 km&sup2;) of agricultural land in the Bengawan Solo River Basin.</p>
 									</picture>
+									</div>
 
 									<p> </p>
+
+									<h3 id="infrastructure">
+										<br>
+										<br>
+									</h3>
 
 									<h3 class="major">Infrastructure</h3>
 									<style>
@@ -171,11 +251,19 @@
 										}
 									</style>
 
+									<div style="text-align: center;">
 									<picture>
-										<img src="/images/Infrastructure BBWS BENGAWAN SOLO_rs_wmk.png" alt="Infrastructure-Bengawan Solo" style="width:900px;height:636px;">
+										<img src="/images/infrastructure-bbws-bengawan-solo.png" alt="Infrastructure-Bengawan Solo" style="width:900px;height:636px;">
+										<p>A sample of a map of infrastructure in a river basin territory. This map depicts existing and proposed infrastructures related to flood risk management in the Bengawan Solo River Basin Territory.</p>
 									</picture>
+									</div>
 
 									<p> </p>
+
+									<h3 id="intervention">
+										<br>
+										<br>
+									</h3>
 
 									<h3 class="major">Intervention</h3>
 									<style>
@@ -187,12 +275,50 @@
 										}
 									</style>
 
+									<div style="text-align: center;">
 									<picture>
-										<img src="/images/Type BBWS CITANDUY_rs_wmk.png" alt="Intervention by Type-Citanduy" style="width:900px;height:636px;">
-										<img src="/images/Date BBWS CITANDUY_rs_wmk.png" alt="Intervention by Date-Citanduy" style="width:900px;height:636px;">
+										<img src="/images/type-bbws-citanduy.png" alt="Intervention by Type-Citanduy" style="width:900px;height:636px;">
+										<p>A sample of a map of proposed Rencana interventions in a river basin territory, classified by type. This map depicts Rencana interventions proposed by the Citanduy River Basin Territory.</p>
+										<img src="/images/date-bbws-citanduy.png" alt="Intervention by Date-Citanduy" style="width:900px;height:636px;">
+										<p>A sample of a map of proposed Rencana interventions in a river basin territory, classified by execution period. This map depicts Rencana interventions proposed by the Citanduy River Basin Territory.</p>
 									</picture>
+									</div>
 
-									<p> </p>
+									<div style="text-align: justify;">
+									<p>
+										In order to provide a brief overview of each River Basin Territory, a standardized summary table was prepared for the basins for which an approved Rencana is available.
+										These summary tables contain compiled information on: institutional setting; basin climate and geography; flood hazard characteristics, flood exposure characteristics, flood vulnerability situation; flood damages from notable historical events, summary climate change information, land use concerning urban, agriculture and forest; information on environment and NBS (Nature-Based Solution); summary list of proposed project in the Rencana based on category types; financing requirements for the proposed interventions; and some selected major ongoing flood projects.
+										Below is an example of the Citanduy River Basin summary table.
+									</p>
+									</div>
+
+									<style>
+									* {
+									  box-sizing: border-box;
+									}
+									
+									.column {
+										float: left;
+										width: 50%;
+										padding: 5px;
+									}
+									
+									/* Clearfix (clear floats) */
+									.row::after {
+										content: "";
+										clear: both;
+										display: table;
+									}
+									</style>
+									
+									<div class="row">
+										<div class="column">
+										<img src="/images/citanduy-summary1.png" alt="summary-table-citanduy1" style="width:100%">
+										</div>
+										<div class="column">
+										<img src="/images/citanduy-summary2.png" alt="summary-table-citanduy2" style="width:100%">
+										</div>
+									</div>
 
 									<!-- <h3 class="major">Vitae phasellus</h3>
 									<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
